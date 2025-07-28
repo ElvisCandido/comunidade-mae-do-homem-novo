@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #c62828; /* vermelho forte */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    background-color: #b71c1c;
+    border-radius: 5px;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fdfdfd;
+    border-left: 5px solid #c62828;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #eee;
+  }
+  
+  section h2 {
+    color: #c62828;
+    margin-bottom: 15px;
+  }
+  
+  section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b71c1c;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #666;
+    font-size: 14px;
+  }
+  
