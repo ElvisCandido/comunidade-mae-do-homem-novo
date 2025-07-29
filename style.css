@@ -1,103 +1,115 @@
-html {
-    scroll-behavior: smooth;
+/* Fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --cor-principal: #b30000;
+  --cor-clara: #ffffff;
+  --cor-escura: #330000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-clara);
+  color: var(--cor-escura);
+  line-height: 1.6;
+  padding-top: 160px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed; /* Torna o cabeçalho fixo */
+  top: 0;          /* Cola o cabeçalho no topo */
+  width: 100%;     /* Garante que o cabeçalho ocupe toda a largura */
+  z-index: 100;    /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+    padding-top: 150px; /* Ajuste este valor */
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 20px;
-  }
-  
-  header {
-    background-color: #c62828; /* vermelho forte */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-  }
-  
-  nav a:hover {
-    background-color: #b71c1c;
-    border-radius: 5px;
-  }
-  
-  section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fdfdfd;
-    border-left: 5px solid #c62828;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #eee;
-  }
-  
-  section h2 {
-    color: #c62828;
-    margin-bottom: 15px;
-  }
-  
-  section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #c62828;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #b71c1c;
-  }
-  
-  footer {
-    text-align: center;
-    margin: 50px 0 20px;
-    color: #666;
-    font-size: 14px;
-  }
-  
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  scroll-margin-top: 150px;
+}
+
+section h2 {
+  color: var(--cor-principal);
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: var(--cor-principal);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #800000;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 20px;
+  position: relative;
+}
